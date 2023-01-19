@@ -1,0 +1,262 @@
+
+$greyColor: grey;
+$clr:#512da8;
+
+// row-1
+
+.card{
+    margin:10px;
+}
+.progres_card{
+    height: 115px;
+    margin: 10px 7px;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
+    font-weight: bold;
+
+    
+    color: greyColor;
+    
+   & .card-subtitle{
+    color: #212121!important;
+        font-size: 1.4rem;
+        line-height: 1.2;
+        font-weight:bold;
+        
+    }
+}
+
+.progress{
+    height: 5px;
+}
+.progress-bar{
+    animation-name: slide;
+    animation-duration: 4s;
+}
+
+@keyframes slide {
+    from {width: 0px;}
+    to {width: 100px;}
+  }
+  
+span{
+    font-size:small;
+    padding-left: 8px;
+}
+
+
+
+//row-2
+
+.content_card{
+    height: 200px;
+    color: white;
+}
+
+.card-body p {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.vl{
+    border-left: 1px solid white;
+    height: 120px;
+    margin-top: -100px ;
+    margin-left: 150px;
+    & span{
+        margin: 0px 5px;
+    }
+
+}
+.text-1 li{
+    list-style: none;
+    margin-top: 15px;
+    
+}
+
+.content_card button{
+    background-color: #dc3545;
+    color: white;
+    width: 80px;
+    height:40px;
+    margin-left: -10px;
+}
+span{
+    font-size:small;
+    padding-left: 8px;
+}
+
+// col2
+
+.col-2{
+    margin-left: 10px;
+}
+
+
+//col3
+
+.content-3{
+   display: inline-block;
+}
+.content-3 p{
+    float: right;
+    margin-top:-5px;
+   margin-right:25px;
+    font-size: medium;
+    font-weight: normal;
+}
+.some-text{
+    margin-top:-100px;
+    margin-left: 168px;
+    font-size: 12px;
+    color: greyColor;
+}
+.card-text-3{
+    color: greyColor;
+    margin:0px 10px 15px;
+  
+}
+a{
+    text-decoration: none;
+    color: clr;
+}
+
+//row-3
+.scroll_card{
+    
+    width: 690px;
+    overflow: hidden;
+   
+}
+
+.scrolling-wrapper:hover{
+	overflow-x:scroll;
+    
+}
+
+.scroll_bar{
+    width: 43rem;
+}
+.scroll_bar img{
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;   
+    margin-left: 20px;
+}
+.rating{
+    display: flex;
+    justify-content:space-around;
+&
+.deals{
+    padding-top: 5px;
+}
+}
+
+//row-4
+
+.row_4{
+    display: inline-block;
+}
+.card_header{
+    background-color: rgba(0,0,0,.05);
+    color: #757575;
+    width: 44rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: -30px;
+}
+.header_title{
+    display: flex;
+    justify-content:space-between;
+}
+.card_container{
+    background-color: white;
+    height: 47rem;
+    width: 44rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: -14px;
+}
+.card_header button{
+    border: none;
+    color: #757575;
+    padding: 17px 15px;
+    background-color: transparent;
+
+}
+button:active {
+    text-decoration: underline;
+    font-size: 15px;
+
+}
+.card_content{
+    display: flex;
+    justify-content: space-between;
+}
+.card_content .text{
+   margin: 20px 20px;
+// & button{
+//     color: #fff;
+//     background-color: #ff4081;
+//     height: 33px;
+//     font-size: 14px;
+//     padding-right: 8px;
+//     margin:8px 2px;
+// }
+}
+
+.card_content img{
+ margin: 40px 30px;
+ width: 170px;
+ height: 150px;
+ border-radius: 20px;
+}
+.sale{
+    border: none;
+    color: #fff;
+    background-color: #ff4081;
+    height: 28px;
+    width: 70px;
+    font-size: 14px;
+    padding-right: 8px;
+    margin:8px 2px;
+    border-radius: 6px;
+}
+.rental{
+    border: none;
+    color: #fff;
+    background-color: #ff9800;
+    height: 28px;
+    width: 100px;
+    font-size: 14px;
+    padding-right: 8px;
+    margin:8px 2px;
+    border-radius: 6px; 
+}
+
+//vertical card
+
+.col-md-8 h3{
+    color: GreyColor;
+}
+
+.vertical-card{
+    margin-top: -220px;
+   margin-right: 73px;
+    float: right;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.activites{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    }
+    
+.vertical-card img{
+    width: 40px;
+    height: 50px;
+    border-radius: 5px;
+}
+h4{
+    margin-left: 20px;
+}
+a{
+    color: clr;
+}

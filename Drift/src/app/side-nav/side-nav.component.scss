@@ -1,0 +1,35 @@
+*{
+    left: 0%;
+}
+.logo{
+    text-align: center;
+    padding: 2.6rem 1rem;
+    img{
+        width: 200px;
+    }
+}
+mat-icon{
+    vertical-align: center;
+    margin: 0px 10px;
+    // margin-left: 1rem;
+    // margin-right: 10px;
+}
+
+mat-list-item{
+    cursor: pointer;
+}
+
+a:hover{
+color: #512da8;
+transition: all .3s ease;
+}
+// .list-item-active{
+//     color: #512da8;
+// }
+//     ::ng-deep{
+//         .mat-list-item-content{
+
+//         }
+    //}
+    
+

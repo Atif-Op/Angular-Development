@@ -1,0 +1,30 @@
+<div class="container-flex">
+    <app-layout></app-layout>
+</div>
+
+<div class="container-flex">
+
+    <app-header></app-header>
+    <div class="content-bar">
+        <app-side-bar></app-side-bar>
+        <div class="content col-8">
+            <div class="content_header">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                </div>
+                <div class="menu_button">
+                    <button mat-button [matMenuTriggerFor]="menu">None <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                      </svg></button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>Item 1</button>
+                        <button mat-menu-item>Item 2</button>
+                    </mat-menu>
+                </div>
+            </div>
+            <hr>
+
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

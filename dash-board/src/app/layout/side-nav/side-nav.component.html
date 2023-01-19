@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <mat-nav-list>
+        <div class="logo py-4">
+            <img src="assets/logo/logo.png" alt="Company Logo" />
+        </div>
+        <mat-divider> </mat-divider>
+        <h2 matSubheader class="mt-2 ms-3">Main</h2>
+        <a mat-list-item routerLinkActive="list-item-active" *ngFor="let item of sideNavBarList"
+            [routerLink]="item.routing">
+            <mat-icon>{{ item.icon }}</mat-icon>{{ item.name }}
+        </a>
+    </mat-nav-list>
+</div>

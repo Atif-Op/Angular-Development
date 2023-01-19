@@ -1,0 +1,107 @@
+<div class="container-fluid">
+
+
+   <!--row-1-->
+
+<h2 [ngStyle]="{'margin':'15px 10px'}">DashBoard Listing</h2>
+  <div class="row">
+    <div class="card progres_card" style="width: 16rem;" *ngFor="let value of progress_card">
+      <div class="card-body card-1">
+        <h5 class="card-title">{{value.name}}</h5>
+        <h6 class="card-subtitle price">{{value.Count}}<span [ngStyle]="{'color':' #52c41a'}">{{value.percentage}}</span><span>{{value.content}}</span></h6>
+        <div class="progress">  
+          <div class="progress-bar" [ngClass]="value.color" role="progressbar" [style]="{'width':value.width+'%'}" aria-valuenow=card.ariavaluenow aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--row -2-->
+
+  <div class="row">
+
+    <div class="card content_card"  [ngStyle]="{'background-color':value.color}" style="width: 21rem;" *ngFor="let value of content_card" [ngClass]="value.css">
+        <div class="card-body">
+          <h3 class="card-title">{{value.name}} </h3>
+          <p>{{value.price |currency}} <span>/month</span></p>
+        </div>
+        <ul>
+          <li>Max listing items</li>
+          <div class="vl" ><span>Expires in 80 days</span>
+            <ul class="text-1">
+              <li><button type="button"  class="btn btn-danger">Danger</button></li>
+              <li><h6>Other Plans</h6></li></ul>
+              
+          </div>
+          
+          2K
+          <li>Max agents - 10</li>
+          
+        </ul>
+      </div>
+
+      <div class="card content_card"  style="width: 21rem;" >
+        <div class="card-body">
+          <h3></h3>
+          <p></p>
+        </div>
+      
+      </div>
+
+
+      <div class="card content_card"  style="width: 21rem;">
+        <div class="card-body card-3">
+          <div class="header">
+            <img [src]="'assets/logo.png'">
+            <h2>Modern Home</h2>
+          </div>
+          <h5>Biloxy,Boston</h5>
+        </div>
+          <p class="text-2">Structure sales Pvt. Ltd is boston’s reputed </p>
+           <p class="text-2"> government construction company since </p>
+            <p class="text-2">2011.</p>
+      
+      
+      </div>
+
+     
+    </div>
+
+    <!-- row -4 -->
+<!-- <div class="row">
+  <div class="col-7 link">
+<h3>Properties</h3>
+<a class="Properties-link"  routerLink="all" *ngFor="let link of properties">{{link}}</a>
+  </div>
+
+<div class="col-7 content">
+
+<router-outlet></router-outlet>
+
+</div>
+</div> -->
+
+<!-- <div class="row row-4">
+  <div class="col-7 link">
+z
+    <div class="prop">
+      <h3>Properties</h3>
+      <div class="input-group">
+        <div class="form-outline">
+          <input type="search" id="form1" class="form-control" placeholder="Search in app..."/>
+        </div>
+        
+  
+      </div>
+    </div>
+
+<a class="Properties-link"  routerLink="all" *ngFor="let link of properties">{{link}}</a>
+  </div>
+  <div class="col-7 content">
+    <app-all></app-all>
+    <router-outlet></router-outlet>
+  </div>
+</div> -->
+
+    <!--Container close-->
+</div>

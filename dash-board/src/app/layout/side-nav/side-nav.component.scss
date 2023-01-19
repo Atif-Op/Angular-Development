@@ -1,0 +1,32 @@
+
+.logo{
+    text-align: center;
+    padding: 2.6rem 1rem;
+    img{
+        width: 180px;
+    }
+}
+mat-icon{
+    vertical-align: center;
+    margin: 0px 10px;
+    
+}
+
+a{
+    cursor: pointer;
+&:hover{
+    color: #512da8;
+    transition: all .3s ease;
+    
+}
+}
+
+
+.list-item-active{
+    color: #512da8;
+    text-shadow: 0px 1px 1px grey;
+    border-radius: 5px 300px 300px 5px;
+}
+   
+    
+

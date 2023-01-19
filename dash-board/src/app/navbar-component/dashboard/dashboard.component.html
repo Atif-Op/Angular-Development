@@ -1,0 +1,150 @@
+<div class="container">
+  <!--row-1-->
+  <div class="row">
+    <h2 [ngStyle]="{ margin: '15px 10px' }">DashBoard Listing</h2>
+
+    <div class="card progres_card col-xl-3 col-sm-6 col-12 mt-3" style="width: 16rem"
+      *ngFor="let value of progress_card">
+      <div class="card-body card-1">
+        <h5 class="card-title">{{ value.name }}</h5>
+        <h6 class="card-subtitle price">
+          {{ value.Count
+          }}<span [ngStyle]="{ color: ' #52c41a' }">{{ value.percentage }}</span><span>{{ value.content }}</span>
+        </h6>
+        <div class="progress">
+          <div class="progress-bar" [ngClass]="value.color" role="progressbar" [style]="{ width: value.width + '%' }"
+            aria-valuenow="card.ariavaluenow" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--row-2-->
+  <div class="row mt-3">
+    <div class="card content_card" [ngStyle]="{ 'background-color': value.color }" style="width: 21rem"
+      *ngFor="let value of current_plan" [ngClass]="value.css">
+      <div class="card-body">
+        <h3 class="card-title">{{ value.name }}</h3>
+        <p>{{ value.price | currency }} <span>/month</span></p>
+      </div>
+      <ul>
+        <li>Max listing items</li>
+        <div class="vl">
+          <span>Expires in 80 days</span>
+          <ul class="text-1">
+            <li>
+              <button type="button" class="btn btn-danger">Danger</button>
+            </li>
+            <li>
+              <h6>Other Plans</h6>
+            </li>
+          </ul>
+        </div>
+
+        2K
+        <li>Max agents - 10</li>
+      </ul>
+    </div>
+
+    <div class="card col-2" style="width: 21rem">
+      <div class="card-body">
+        <div>
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="card col-3" style="width: 21rem" *ngFor="let value of content_card">
+      <div class="card-body content-3">
+        <img [src]="value.image" [ngStyle]="{ width: '110px', height: '50px' }" />
+        <p>{{ value.title }}</p>
+      </div>
+      <h6 class="some-text">{{ value.text4 }}</h6>
+      <div class="card-text-3">
+        <p>{{ value.text1 }}</p>
+        <p>{{ value.text2 }}</p>
+        <p>{{ value.text3 }}</p>
+        <a href="#" class="card-link">{{ value.more }}</a>
+      </div>
+    </div>
+  </div>
+
+  <!--row-3-->
+
+  <div class="row scroll_card">
+    <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2 scroll_bar">
+      <div class="col-3" *ngFor="let item of creators">
+        <div class="scroll-images">
+          <img [src]="item.img" alt="" />
+          <h4 class="text-muted mt-3">{{ item.name }}</h4>
+          <div class="rating text-muted">
+            <p>
+              <span class="material-icons" style="color: rgb(255, 210, 48); font-size: 18px">star_rate</span>
+              {{ item.rating }}
+            </p>
+            <div class="vr" style="height: 30px"></div>
+            <span class="deals">{{ item.deals }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--row 4-->
+
+  <div class="row mt-5 row_4">
+    <div class="card_header">
+      <div class="header_title">
+        <h2 class="card-title py-3 px-2 text-dark">Properties</h2>
+        <div class="form-outline">
+          <input type="search" id="form1" class="form-control mt-4" placeholder="search in app" aria-label="Search" />
+        </div>
+      </div>
+      <button (click)="function('all')">All</button>
+      <button (click)="function('popular')">Popular</button>
+      <button (click)="function('new jersey')">New Jersey</button>
+      <button (click)="function('colorado')">Colorado</button>
+      <button (click)="function('albama')">Albama</button>
+      </div>
+    <div class="card_container">
+      <div class="card_content" *ngFor="let item of filterProduct">
+
+        <div class="text">
+          <button type="button" [ngClass]="item.product.btn_css">For Sale</button>
+          <h2>{{ item.product.title }}</h2>
+          <p class="text-muted">{{ item.product.location }}</p>
+          <h1>
+            {{ item.product.price
+            }}<span>${{ item.product.costPerSqft }}/sqft</span>
+          </h1>
+          <a>Check in detail</a>
+        </div>
+        <div class="images">
+          <img [src]="item.product.img" alt="image" />
+        </div>
+      </div>
+      <hr />
+    </div>
+  </div>
+
+  <!-- vertical card -->
+
+  <div class="card vertical-card" style="width: 20rem; height: 43rem">
+    <div class="card-body">
+      <h3 class="card-title">Recent Activites</h3>
+      <h5 class="text-muted">Today</h5>
+      <div class="activites" *ngFor="let item of activites_1">
+        <img [src]="item.img" />
+        <h4>{{ item.text }}</h4>
+      </div>
+      <h5 class="text-muted">Yesterday</h5>
+      <div class="activites" *ngFor="let item of activites_2">
+        <img [src]="item.img" />
+        <h4>{{ item.text }}</h4>
+      </div>
+      <a href="#" class="card-link">Load more</a>
+    </div>
+  
+
+  <!--container end..-->
+</div>

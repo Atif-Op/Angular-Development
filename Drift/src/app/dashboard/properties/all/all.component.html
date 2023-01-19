@@ -1,0 +1,15 @@
+
+<div class="text">
+<button type="button" class="btn btn-primary">FOR SALE</button>
+<div class="card" style="width: 13rem;">
+    <img [src]="'assets/property-6.jpeg'" class="card-img-top" alt="...">
+</div>
+</div>
+<div class="Properties_data"  *ngFor="let data of all">
+    <h1>{{data.label}}</h1>
+    <h4 [ngStyle]="{'color':'grey'}">{{data.location}}</h4>
+    <h1>{{data.price}}</h1>
+    <a routerLink="#"><h4>{{data.text}}</h4></a>
+  </div>
+  <hr>
+    

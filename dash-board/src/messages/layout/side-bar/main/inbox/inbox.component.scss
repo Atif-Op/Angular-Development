@@ -1,0 +1,58 @@
+.col{
+    width: 56rem;
+    margin: -50px 30px;
+}
+.toolbar{
+    margin-top: 70px;
+}
+.inbox-body{
+height: 5rem;
+display: flex;
+justify-content: flex-start;
+}
+
+.tools{
+    width:300px;
+    height: 60px;
+    margin: -14px 10px;
+}
+.form-check-input{
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+}
+.star{
+    margin: -6px 0px 0px 50px;
+   }
+
+   img{
+    margin: -7px 70px 0px 15px;
+        width: 44px;
+        border-radius: 100%;
+    }
+.message_content{
+    margin-top: -10px;
+}
+.message_content .inbox_tile{
+display: flex;
+justify-content: flex-start;
+margin-left: -50px;
+}
+.vr{
+    margin:5px 4px 0px 7px;
+    height: 8px;
+}
+.inbox_text {
+    margin: -10px 0px 0px -50px;
+}
+p{
+    width: 34rem; 
+    height: 20px;
+    overflow: hidden;
+    display: inline-block;
+}
+.message_content hr{
+   width: 55.3rem;
+   margin-top: -8px;
+   margin-left: -200px;
+}

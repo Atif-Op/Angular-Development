@@ -1,0 +1,32 @@
+
+.row{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    margin:30px 0px 2px 70px;
+    border-radius: 5px;
+    width: 76rem;
+
+}
+.card_header{
+    display: flex;
+    justify-content:flex-start;
+}
+.card_title{
+    width: 230px;
+}
+mat-list{
+    padding-left: 5px;
+    
+}
+mat-icon{
+    margin: 0px 10px;
+    
+}
+
+.input-group{
+width: 450px;
+margin: 20px 50px;
+}
+.notification mat-icon{
+  position: absolute;
+  margin:30px 360px;
+}

@@ -1,0 +1,29 @@
+mat-toolbar{
+    background-color: white;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    border: 0;
+     outline: none;
+     background: transparent;
+}
+.search{
+    display: inline-block;
+    height: 40px;
+}
+.btn{
+    float: right;
+    background-color:#6610f2;
+    width: 100px;
+    color: white;
+    height: 40px;
+    border-radius: 20px 0px opx 20px ;
+}
+.app{
+    font-size: 15px;
+
+}
+
